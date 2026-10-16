@@ -1,0 +1,1357 @@
+/* ==================================================
+   JÚLIO CÉSAR - PORTFÓLIO
+   STYLE.CSS
+================================================== */
+
+
+/* ==================================================
+   CONFIGURAÇÕES GERAIS
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #172033 0%,
+            #0f1115 35%,
+            #0b0d11 100%
+        );
+
+    color: #ffffff;
+
+    line-height: 1.6;
+
+    min-height: 100vh;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+/* ==================================================
+   PERFIL / APRESENTAÇÃO
+================================================== */
+
+.perfil {
+    max-width: 1100px;
+
+    margin: 30px auto 0;
+
+    background: #151820;
+
+    border: 1px solid #282d36;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+
+
+/* ==================================================
+   CAPA
+================================================== */
+
+.capa {
+    width: 100%;
+
+    height: 210px;
+
+    overflow: hidden;
+
+    background: #20242c;
+
+    position: relative;
+}
+
+
+.capa::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 30%,
+            rgba(15, 17, 21, 0.85) 100%
+        );
+}
+
+
+.capa img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* ==================================================
+   CONTEÚDO DO PERFIL
+================================================== */
+
+.perfil-conteudo {
+    position: relative;
+
+    padding: 0 50px 50px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 35px;
+}
+
+
+
+/* ==================================================
+   FOTO
+================================================== */
+
+.foto-area {
+    flex-shrink: 0;
+}
+
+
+.foto-perfil {
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    object-position: center 20%;
+
+    border: 7px solid #151820;
+
+    margin-top: -95px;
+
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+
+
+/* ==================================================
+   INFORMAÇÕES PRINCIPAIS
+================================================== */
+
+.informacoes {
+    padding-top: 25px;
+
+    flex: 1;
+}
+
+
+.apresentacao {
+    display: block;
+
+    color: #60a5fa;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 3px;
+}
+
+
+.informacoes h1 {
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    color: #ffffff;
+
+    margin-bottom: 5px;
+}
+
+
+.informacoes h2 {
+    font-size: 21px;
+
+    color: #60a5fa;
+
+    margin-bottom: 14px;
+}
+
+
+.descricao-principal {
+    color: #b9bec8;
+
+    max-width: 650px;
+
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+
+.localizacao {
+    color: #8f96a3;
+
+    font-size: 14px;
+
+    margin-top: 5px;
+}
+
+
+
+/* ==================================================
+   TECNOLOGIAS
+================================================== */
+
+.tecnologias {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 18px;
+}
+
+
+.tecnologias span {
+    padding: 6px 13px;
+
+    background: rgba(37, 99, 235, 0.12);
+
+    border: 1px solid rgba(96, 165, 250, 0.35);
+
+    border-radius: 30px;
+
+    color: #93c5fd;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+
+/* ==================================================
+   BOTÕES DO PERFIL
+================================================== */
+
+.botoes {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+.botao {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 46px;
+
+    padding: 11px 22px;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    transition:
+        transform 0.3s,
+        background 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.botao:hover {
+    transform: translateY(-3px);
+
+    background: #3b82f6;
+
+    box-shadow:
+        0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+
+.botao-contato {
+    background: transparent;
+
+    border: 1px solid #3a414d;
+
+    color: #ffffff;
+}
+
+
+.botao-contato:hover {
+    background: #252a33;
+
+    border-color: #4b5563;
+
+    box-shadow: none;
+}
+
+
+
+/* ==================================================
+   CONTEÚDO PRINCIPAL
+================================================== */
+
+main {
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+
+/* ==================================================
+   SEÇÕES
+================================================== */
+
+.sobre,
+.projetos,
+.servicos,
+.contato {
+    padding: 80px 40px;
+}
+
+
+.subtitulo-secao {
+    display: block;
+
+    color: #60a5fa;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 7px;
+}
+
+
+.titulo-secao {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.titulo-secao h2,
+.sobre h2 {
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    margin-bottom: 12px;
+}
+
+
+.titulo-secao p {
+    color: #9ca3af;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+
+/* ==================================================
+   SOBRE MIM
+================================================== */
+
+.sobre {
+    text-align: center;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+.sobre p {
+    max-width: 760px;
+
+    margin: 10px auto;
+
+    color: #b9bec8;
+
+    font-size: 16px;
+}
+
+
+
+/* ==================================================
+   PROJETOS
+================================================== */
+
+.projetos {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+
+.cards-projetos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+.card {
+    background:
+        linear-gradient(
+            145deg,
+            #191d24,
+            #14171d
+        );
+
+    border: 1px solid #292f39;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        transform 0.3s,
+        border-color 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-7px);
+
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+
+
+/* ==================================================
+   IMAGENS DOS PROJETOS
+================================================== */
+
+.imagem-projeto {
+    width: 100%;
+
+    height: 210px;
+
+    background: #242932;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+.imagem-projeto img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s;
+}
+
+
+.card:hover .imagem-projeto img {
+    transform: scale(1.04);
+}
+
+
+
+/* ==================================================
+   CONTEÚDO DOS CARDS
+================================================== */
+
+.card-conteudo {
+    padding: 24px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+}
+
+
+.categoria {
+    display: inline-block;
+
+    font-size: 11px;
+
+    color: #60a5fa;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+
+    margin-bottom: 4px;
+}
+
+
+.card h3 {
+    font-size: 23px;
+
+    margin: 5px 0 10px;
+
+    color: #ffffff;
+}
+
+
+.card p {
+    color: #aeb4bf;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+
+    flex-grow: 1;
+}
+
+
+
+/* ==================================================
+   TECNOLOGIAS DOS PROJETOS
+================================================== */
+
+.tecnologias-projeto {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-bottom: 20px;
+}
+
+
+.tecnologias-projeto span {
+    padding: 4px 9px;
+
+    background: #222731;
+
+    border: 1px solid #343b47;
+
+    border-radius: 6px;
+
+    color: #b9c1cc;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+
+/* ==================================================
+   LINK DOS PROJETOS
+================================================== */
+
+.link-projeto {
+    display: inline-block;
+
+    color: #60a5fa;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    margin-top: auto;
+
+    transition:
+        color 0.3s,
+        transform 0.3s;
+}
+
+
+a.link-projeto:hover {
+    color: #93c5fd;
+
+    transform: translateX(4px);
+}
+
+
+.projeto-bloqueado {
+    color: #737b88;
+
+    cursor: default;
+}
+
+
+
+/* ==================================================
+   PROJETO FUTURO
+================================================== */
+
+.projeto-futuro {
+    opacity: 0.85;
+}
+
+
+.imagem-projeto.futuro {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.imagem-projeto.futuro img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* ==================================================
+   SERVIÇOS
+================================================== */
+
+.servicos {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+
+.cards-servicos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.servico {
+    background:
+        linear-gradient(
+            145deg,
+            #191d24,
+            #14171d
+        );
+
+    border: 1px solid #282d36;
+
+    border-radius: 16px;
+
+    padding: 30px 22px;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s,
+        border-color 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.servico:hover {
+    transform: translateY(-5px);
+
+    border-color: #3b82f6;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+.icone {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(37, 99, 235, 0.12);
+
+    border: 1px solid rgba(96, 165, 250, 0.20);
+
+    font-size: 28px;
+}
+
+
+.servico h3 {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+
+.servico p {
+    color: #aeb4bf;
+
+    font-size: 14px;
+}
+
+
+
+/* ==================================================
+   INSTAGRAM
+================================================== */
+
+.instagram {
+    padding: 20px 40px 80px;
+
+    text-align: center;
+}
+
+
+.instagram-conteudo {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 50px 30px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #191d24,
+            #14171d
+        );
+
+    border: 1px solid #282d36;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.20);
+}
+
+
+.instagram-icone {
+    font-size: 42px;
+
+    margin-bottom: 8px;
+}
+
+
+.instagram h2 {
+    font-size: 29px;
+
+    margin-bottom: 10px;
+}
+
+
+.instagram p {
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    color: #aeb4bf;
+}
+
+
+.botao-instagram {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 12px 25px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #833ab4,
+            #c13584
+        );
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.botao-instagram:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(193, 53, 132, 0.25);
+}
+
+
+
+/* ==================================================
+   CONTATO / ORÇAMENTO
+================================================== */
+
+.contato {
+    text-align: center;
+
+    padding-top: 20px;
+
+    padding-bottom: 80px;
+}
+
+
+.contato-conteudo {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #172034,
+            #14171d
+        );
+
+    border: 1px solid #30394a;
+
+    border-radius: 22px;
+
+    padding: 60px 30px;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+
+.contato-conteudo::before {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    background: rgba(37, 99, 235, 0.10);
+
+    border-radius: 50%;
+
+    top: -140px;
+    right: -100px;
+
+    pointer-events: none;
+}
+
+
+.icone-contato {
+    display: block;
+
+    font-size: 46px;
+
+    margin-bottom: 5px;
+}
+
+
+.contato h2 {
+    font-size: 32px;
+
+    margin: 8px 0 15px;
+}
+
+
+.contato p {
+    color: #aeb4bf;
+
+    margin-bottom: 12px;
+}
+
+
+.texto-orcamento {
+    max-width: 650px;
+
+    margin: 0 auto 28px !important;
+
+    font-size: 16px;
+}
+
+
+
+/* ==================================================
+   BOTÃO WHATSAPP
+================================================== */
+
+.botao-whatsapp {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding: 14px 28px;
+
+    border-radius: 11px;
+
+    background: #22c55e;
+
+    color: #ffffff;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    transition:
+        transform 0.3s,
+        background 0.3s,
+        box-shadow 0.3s;
+
+    box-shadow:
+        0 8px 20px rgba(34, 197, 94, 0.20);
+}
+
+
+.botao-whatsapp:hover {
+    transform: translateY(-3px);
+
+    background: #16a34a;
+
+    box-shadow:
+        0 13px 28px rgba(34, 197, 94, 0.28);
+}
+
+
+.resposta {
+    margin-top: 18px !important;
+
+    margin-bottom: 0 !important;
+
+    font-size: 12px;
+
+    color: #737b88 !important;
+}
+
+
+
+/* ==================================================
+   RODAPÉ
+================================================== */
+
+footer {
+    max-width: 1100px;
+
+    margin: auto;
+
+    border-top: 1px solid #232832;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: #737b88;
+
+    font-size: 12px;
+}
+
+
+footer p {
+    margin: 3px 0;
+}
+
+
+
+/* ==================================================
+   TABLETS
+================================================== */
+
+@media (max-width: 950px) {
+
+    .perfil {
+        margin: 20px;
+    }
+
+
+    main {
+        width: 100%;
+    }
+
+
+    .cards-projetos {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .cards-servicos {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .projeto-futuro {
+        grid-column: span 2;
+    }
+
+}
+
+
+
+/* ==================================================
+   CELULARES
+================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        background: #0f1115;
+    }
+
+
+    /* PERFIL */
+
+    .perfil {
+        margin: 0;
+
+        border-radius: 0 0 20px 20px;
+
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
+
+
+    .capa {
+        height: 150px;
+    }
+
+
+    .perfil-conteudo {
+        padding: 0 22px 40px;
+
+        display: block;
+
+        text-align: center;
+    }
+
+
+    .foto-area {
+        display: flex;
+
+        justify-content: center;
+    }
+
+
+    .foto-perfil {
+        width: 145px;
+        height: 145px;
+
+        margin-top: -72px;
+
+        border-width: 6px;
+    }
+
+
+    .informacoes {
+        padding-top: 16px;
+    }
+
+
+    .apresentacao {
+        font-size: 12px;
+    }
+
+
+    .informacoes h1 {
+        font-size: 32px;
+    }
+
+
+    .informacoes h2 {
+        font-size: 18px;
+    }
+
+
+    .descricao-principal {
+        font-size: 15px;
+
+        max-width: 500px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .localizacao {
+        margin-top: 10px;
+    }
+
+
+    /* TECNOLOGIAS */
+
+    .tecnologias {
+        justify-content: center;
+
+        margin-top: 18px;
+    }
+
+
+    /* BOTÕES */
+
+    .botoes {
+        flex-direction: column;
+
+        margin-top: 25px;
+    }
+
+
+    .botao {
+        width: 100%;
+    }
+
+
+    /* SEÇÕES */
+
+    .sobre,
+    .projetos,
+    .servicos,
+    .contato {
+        padding: 60px 20px;
+    }
+
+
+    .titulo-secao {
+        margin-bottom: 30px;
+    }
+
+
+    .titulo-secao h2,
+    .sobre h2 {
+        font-size: 27px;
+    }
+
+
+    /* PROJETOS */
+
+    .cards-projetos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .projeto-futuro {
+        grid-column: auto;
+    }
+
+
+    .imagem-projeto {
+        height: 220px;
+    }
+
+
+    .card-conteudo {
+        text-align: left;
+    }
+
+
+    /* SERVIÇOS */
+
+    .cards-servicos {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .servico {
+        padding: 25px 15px;
+    }
+
+
+    /* INSTAGRAM */
+
+    .instagram {
+        padding: 0 20px 60px;
+    }
+
+
+    .instagram-conteudo {
+        padding: 40px 20px;
+    }
+
+
+    .instagram h2 {
+        font-size: 25px;
+    }
+
+
+    .botao-instagram {
+        width: 100%;
+    }
+
+
+    /* CONTATO */
+
+    .contato {
+        padding-top: 0;
+    }
+
+
+    .contato-conteudo {
+        padding: 45px 20px;
+    }
+
+
+    .contato h2 {
+        font-size: 27px;
+    }
+
+
+    .botao-whatsapp {
+        width: 100%;
+    }
+
+}
+
+
+
+/* ==================================================
+   CELULARES PEQUENOS
+================================================== */
+
+@media (max-width: 480px) {
+
+    .capa {
+        height: 130px;
+    }
+
+
+    .foto-perfil {
+        width: 130px;
+        height: 130px;
+
+        margin-top: -65px;
+    }
+
+
+    .informacoes h1 {
+        font-size: 29px;
+    }
+
+
+    .informacoes h2 {
+        font-size: 17px;
+    }
+
+
+    .descricao-principal {
+        font-size: 14px;
+    }
+
+
+    .sobre,
+    .projetos,
+    .servicos,
+    .contato {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .cards-servicos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .imagem-projeto {
+        height: 200px;
+    }
+
+
+    .card-conteudo {
+        padding: 20px;
+    }
+
+
+    .instagram {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .contato h2 {
+        font-size: 25px;
+    }
+
+}
